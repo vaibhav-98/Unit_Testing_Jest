@@ -1,0 +1,34 @@
+{
+  "name": "jest_testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaibhav-98/Unit_Testing_Jest.git"
+  },
+  "author": "Vaibhav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vaibhav-98/Unit_Testing_Jest/issues"
+  },
+  "homepage": "https://github.com/vaibhav-98/Unit_Testing_Jest#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-html-reporter": "^3.10.2"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "reporters": [
+      "default", [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Test Report"
+        }
+      ]
+    ]
+  }
+}
